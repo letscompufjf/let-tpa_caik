@@ -25,7 +25,7 @@ int main()
     vector<int> b(m);
 
     for(int &x : b) cin >> x;
-    
+
     cout << *max_element(a.begin(), a.end()) << " " << *max_element(b.begin(), b.end()) << endl;
 
     return(0);

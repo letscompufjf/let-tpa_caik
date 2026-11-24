@@ -2,7 +2,7 @@
 
 using namespace std;
 
-#define _ ios_base::sync_with_stdio(0);cin.tie(0);
+#define _ ios_base::sync_with_stdio(0); cin.tie(0);
 #define endl '\n'
 #define f first
 #define s second
@@ -24,7 +24,7 @@ int main()
     int n; cin >> n;
     vector<ii> v;
 
-    for(int i = 0; i < n; i ++)
+    for(int i = 0; i < n; i++)
     {
         int a, b; cin >> a >> b;
         v.pb({a, b});
@@ -35,17 +35,16 @@ int main()
     int ans = 0;
     int fim = -1;
 
-    for(int i = 0; i < n; i ++)
+    for(int i = 0; i < n; i++)
     {
         if(v[i].f > fim)
         {
             fim = v[i].s;
-            ans ++;
+            ans++;
         }
-
     }
 
     cout << ans << endl;
 
-    return 0;
+    return(0);
 }

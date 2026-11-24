@@ -2,30 +2,38 @@
 
 using namespace std;
 
-#define _ ios_base::sync_with_stdio(0);cin.tie(0);
+#define _ ios_base::sync_with_stdio(0); cin.tie(0);
 #define endl '\n'
 #define f first
 #define s second
+#define pb push_back
 
 typedef long long ll;
-typedef pair<int,int> ii;
+typedef pair<int, int> ii;
 
 const int INF = 0x3f3f3f3f;
 const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 
-int main(){ _
-    int t;cin >> t;
-    while(t--){
-        string a, b, c;cin >> a >> b >> c;
+int main()
+{ _
+    int t; cin >> t;
+
+    while(t--)
+    {
+        string a, b, c; cin >> a >> b >> c;
+
         bool ok = true;
-        for(int i = 0; i < (int)a.size(); i++){
-            if(a[i] != c[i] && b[i] != c[i]){
+        for(int i = 0; i < (int)a.size(); i++)
+        {
+            if(a[i] != c[i] && b[i] != c[i])
+            {
                 ok = false;
                 break;
             }
         }
+
         cout << (ok ? "YES" : "NO") << endl;
     }
-    return 0;
-}
 
+    return(0);
+}

@@ -17,12 +17,13 @@ const ll LINF = 0x3f3f3f3f3f3f3f3fll;
 int main()
 { _
     int n; cin >> n;
+
     string str(n, ' ');
+    for(char &x : str)
+        cin >> x;
 
-    for(char &x : str) cin >> x;
-
-    int zero = count(str.begin(), str.end(), 'z');
-    int one = count(str.begin(), str.end(), 'n');
+    int zero = (int)count(str.begin(), str.end(), 'z');
+    int one = (int)count(str.begin(), str.end(), 'n');
 
     while(one)
     {
@@ -37,6 +38,6 @@ int main()
     }
 
     cout << endl;
-    
+
     return(0);
 }
